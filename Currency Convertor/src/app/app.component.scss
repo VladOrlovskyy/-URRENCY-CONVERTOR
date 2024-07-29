@@ -1,0 +1,22 @@
+.main-header {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  padding: 1rem;
+
+
+  &__col {
+    display: flex;
+    align-items: center;
+    margin: 0 1rem;
+
+    &:first-of-type {
+      margin-right: 1rem;
+    }
+  }
+}
+
+app-convertor {
+  display: flex;
+  justify-content: center;
+}

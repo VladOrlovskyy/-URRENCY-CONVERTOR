@@ -1,0 +1,29 @@
+<div class="currency-convertor">
+  <div class="currency-convertor__row">
+    <div class="currency-convertor__col">
+      <input
+        type="number"
+        (input)="handleInput1($event)"
+        [formControl]="controlInput1"
+        class="currency-convertor__input"
+      />
+      <select (change)="handleSelect1($event)">
+        <option value="UAH">UAH</option>
+        <option value="USD">USD</option>
+        <option value="EUR">EUR</option>
+      </select>
+    </div>
+    <div class="currency-convertor__col">
+      <input type="number"
+        (input)="handleInput2($event)"
+        [formControl]="controlInput2"
+        class="currency-convertor__input"
+      />
+      <select (change)="handleSelect2($event)">
+        <option value="UAH">UAH</option>
+        <option value="USD">USD</option>
+        <option value="EUR">EUR</option>
+      </select>
+    </div>
+  </div>
+</div>
